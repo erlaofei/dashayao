@@ -1,0 +1,99 @@
+a{
+    font-size: 14px;
+    color: #333;
+}
+.content{
+    background: #fff;
+}
+.module{
+
+}
+.module h2{
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.module h2 a{
+    float: right;
+}
+.module ul .bdtxt h3{
+    padding-bottom: 5px;
+}
+.module ul .bdtxt{
+    width: 286px;
+    padding: 10px;
+    background: #fff;
+}
+.module ul .bdtxt p {
+    font-size: 12px;
+    color: #999;
+}
+.module ul {
+    width: 1300px;
+}
+.module ul li {
+    float: left;
+    margin-right: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.module ul li img {
+    width: 286px;
+    height: 162px;
+}
+.module ul li .zhe{
+    width:286px; height:162px; position:absolute; left:0; top:0; background:#000;  opacity:0; filter:alpha(opacity=0);
+}
+.module ul li .star{width:72px;height:72px;display:block;position:absolute;left:50%;margin-left:-36px;top:39px;background:url(../../../images/icon.png) no-repeat 0 -259px;display:none;}
+.module ul li .bm_btn{display:block; width:70px; height:70px; padding-top:15px; border-radius:50px; text-align:center; background:#fff; font-size:16px; color:#2E3340; position:absolute; left:50%; margin-left:-36px; top:56px; display:none; box-shadow:2px 2px 0 rgba(255,255,255,0.5);}
+.module ul li:hover .zhe{ opacity:0.3; filter:alpha(opacity=30);  -webkit-filter:alpha(opacity=30); }
+.module ul li:hover .star{display:block;}
+.module ul li:hover .bm_btn{display:block;}
+.agd{ -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out;}
+/* 动画 */
+.video_s{animation: video_s .3s ease; -moz-animation: video_s .3s ease; -webkit-animation: video_s .3s ease; -o-animation: video_s .3s ease; }
+@keyframes video_s
+{
+from {top:0;}
+to {top:39px;}
+}
+@-moz-keyframes video_s 
+{
+from {top:0;}
+to {top:39px;}
+}
+
+@-webkit-keyframes video_s
+{
+from {top:0;}
+to {top:39px;}
+}
+
+@-o-keyframes video_s
+{
+from {top:0;}
+to {top:39px;}
+}
+.content-t.w .title{
+    background: #fff;
+    padding-left: 36px;
+    height: 80px;
+}
+.content-t.w .title span{
+    font-size: 14px;
+   color: #999;
+}
+.content-t.w .title a {
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 14px;
+    padding :0 20px;
+}
+.content-t.w .title a:hover{
+    color: #178fcb;
+}
+.content-t.w .title a.on{
+    color: #178fcb;
+}

@@ -1,0 +1,92 @@
+<html><head>
+        <title>官网预约报名页面</title> 
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
+        <script type="text/javascript" src="../js/jquery-1.12.1.js"></script>
+        <script type="text/javascript">
+        $(function(){
+            $("select[name='realsex']").html('<option value="男">男</option><option value="女">女</option>');
+            $("select[name='realxl']").html('<option value="大专">大专</option><option value="本科">本科</option><option value="研究生及以上">研究生及以上</option><option value="其他">其他</option>');
+            
+        var subjectoption,subjects,subject,school,schools;
+            schools = JSON.parse(['{"python":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","CHANGSHA":"\u957f\u6c99","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","WUHAN":"\u6b66\u6c49","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","NANJING":"\u5357\u4eac","BEIJING":"\u5317\u4eac"},"c":{"SHENZHEN":"\u6df1\u5733","BEIJING":"\u5317\u4eac"},"netmarket":{"SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","BEIJING":"\u5317\u4eac"},"test":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","ZHENGZHOU":"\u90d1\u5dde","BEIJING":"\u5317\u4eac"},"go":{"SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","BEIJING":"\u5317\u4eac"},"javaee":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","SHIJIAZHUANG":"\u77f3\u5bb6\u5e84","TAIYUAN":"\u592a\u539f","WUHAN":"\u6b66\u6c49","CHONGQING":"\u91cd\u5e86","JINAN":"\u6d4e\u5357","SHENYANG":"\u6c88\u9633","CHENGDOU":"\u6210\u90fd","NANJING":"\u5357\u4eac","CHANGSHA":"\u957f\u6c99","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","HEFEI":"\u5408\u80a5","SHAMEN":"\u53a6\u95e8","BEIJING":"\u5317\u4eac","HAERBIN":"\u54c8\u5c14\u6ee8"},"ds":{"BEIJING":"\u5317\u4eac"},"cloud":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","WUHAN":"\u6b66\u6c49","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","BEIJING":"\u5317\u4eac"},"movies":{"BEIJING":"\u5317\u4eac"},"Linux":{"BEIJING":"\u5317\u4eac"},"ui":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","WUHAN":"\u6b66\u6c49","ZHENGZHOU":"\u90d1\u5dde","BEIJING":"\u5317\u4eac"},"web":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","CHANGSHA":"\u957f\u6c99","HANGZHOU":"\u676d\u5dde","SHANGHAI":"\u4e0a\u6d77","WUHAN":"\u6b66\u6c49","XIAN":"\u897f\u5b89","ZHENGZHOU":"\u90d1\u5dde","NANJING":"\u5357\u4eac","BEIJING":"\u5317\u4eac"},"php":{"GUANGZHOU":"\u5e7f\u5dde","SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","BEIJING":"\u5317\u4eac"},"pm":{"SHENZHEN":"\u6df1\u5733","SHANGHAI":"\u4e0a\u6d77","BEIJING":"\u5317\u4eac"}}']);
+            var schoolhtml = '<option value="0">请选择校区</option>';
+            $("select[name='realschool']").html(schoolhtml);
+            
+            subject = JSON.parse(['{"python":"\u4eba\u5de5\u667a\u80fd+Python","c":"C\/C++\u4e0e\u7f51\u7edc\u653b\u9632","netmarket":"\u65b0\u5a92\u4f53+\u77ed\u89c6\u9891\u8fd0\u8425","test":"\u8f6f\u4ef6\u6d4b\u8bd5","go":"Go\u8bed\u8a00\u4e0e\u533a\u5757\u94fe","javaee":"JavaEE","ds":"\u7535\u5546\u8fd0\u8425","cloud":"\u4e91\u8ba1\u7b97\u5927\u6570\u636e","movies":"\u5f71\u89c6\u5236\u4f5c","Linux":"\u7f51\u7edc\u5b89\u5168+\u8fd0\u7ef4\u5de5\u7a0b\u5e08","ui":"UI\/UE\u8bbe\u8ba1","web":"\u524d\u7aef\u4e0e\u79fb\u52a8\u5f00\u53d1","php":"PHP+H5\u5168\u6808\u5de5\u7a0b\u5e08","pm":"\u4ea7\u54c1\u7ecf\u7406"}']);
+            var subjectshtml = '<option value="0">请选择学科</option>';
+            $.each( subject, function(i, n){
+                subjectshtml += '<option value="'+i+'">'+n+'</option>'
+            });
+
+            $("select[name='realsubject']").html(subjectshtml);
+            
+            
+            $("select[name='realsubject']").change( function() {
+                schoolshtml = '<option value="0">请选择校区</option>';
+                subjectoption = $(this).val();
+                subjectoptions = schools[subjectoption];
+                $.each( subjectoptions, function(i, n){
+                    schoolshtml += '<option value="'+i+'">'+n+'</option>'
+                });
+                $("select[name='realschool']").html(schoolshtml);
+            });	$("#realsubmit").click( function() {
+                var obj = $("form").serialize();
+               console.log("ajax")
+                
+            });			
+        });
+        </script>
+        <body>
+        <style>
+        *{padding:0; margin:0;}
+        ol,ul,li{list-style:none;}
+        .bm{width:100%; background:#FFF; font-family:Microsoft Yahei; padding:50px 0 10px;}
+        .bm h2{height:70px; background:url('../images/h_bg.png') no-repeat center top; text-indent:-9999px;}
+        .bm .bm_con{width:938px; margin:0 auto; overflow:hidden;}
+        .bm .bm_con .left{width:720px; float:left;}
+        .bm .bm_con .left ul {overflow: hidden;}
+        .bm .bm_con .left ul li{float:left; width:338px; margin-bottom:20px; overflow:hidden; height:41px;}	
+        .bm .bm_con .left ul li .l_text{float:left; font-size:18px; color:#666; padding-right:10px; line-height:40px;}
+        .bm .bm_con .left ul li input{float:left; width:211px; padding:10px 0; border:1px solid #c9c9c9; border-radius:3px; padding-left:10px; box-shadow:inset 1px 2px 3px #f1f1f1; margin-top:2px;}	
+        .bm .bm_con .right{width:218px; float:left;}
+        .bm .bm_con .right button{display:block; width:216px; height:36px; color:#fff; font-size:16px; background:#4492dc; border:none; outline:none; border-radius:3px; font-family:Microsoft Yahei;}
+        .bm .bm_con .right input:hover{ background:#5aa3e9;}
+        .bm .bm_con .right p{font-size:12px; color:#666; margin-top:25px;}	
+        </style>
+        <div class="bm">
+            <h2>每期开班座位有限,预报名可优先享有占座特权哦！</h2>
+            <div class="bm_con">
+                <form>
+                    <div class="left">
+                        <ul>
+                            <li>
+                                <span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>真实姓名</span>
+                                <input type="text" placeholder="请输入您的姓名" name="realname" id="bd_realname">
+                            </li>
+                            <li>
+                                <span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; padding-right:5px;">*</s>所报学科</span>
+                                <select style="width:212px; height:36px; display:block;" name="realsubject" title="请选择您的学科"><option value="0">请选择学科</option><option value="python">人工智能+Python</option><option value="c">C/C++与网络攻防</option><option value="netmarket">新媒体+短视频运营</option><option value="test">软件测试</option><option value="go">Go语言与区块链</option><option value="javaee">JavaEE</option><option value="ds">电商运营</option><option value="cloud">云计算大数据</option><option value="movies">影视制作</option><option value="Linux">网络安全+运维工程师</option><option value="ui">UI/UE设计</option><option value="web">前端与移动开发</option><option value="php">PHP+H5全栈工程师</option><option value="pm">产品经理</option></select>
+                            </li>
+                            <li>
+                                <span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:5px;">*</s>联系手机</span>
+                                <input type="text" placeholder="请输入您的手机号" name="realphone">
+                            </li>
+                            <li>
+                                <span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; padding-right:5px;">*</s>选择校区</span>
+                                <select style="width:212px; height:36px; display:block;" name="realschool" title="请选择您的校区"><option value="0">请选择校区</option></select>
+                            </li>
+                            <li>
+                                <span class="l_text"><s style="color:#e00000; font-size:15px; text-decoration:none; line-height:40px; padding-right:11px;">*</s>QQ号码</span>
+                                <input type="text" placeholder="请输入您的QQ号码" name="realqq">
+                            </li>					
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="right">
+                        <button type="button" id="realsubmit">现在预报名</button>
+                        <p>温馨提示：请保持手机畅通，咨询老师将为您提供专属的一对一报名服务。</p>
+                    </div></form>
+            </div>
+        </div>
+        </body></html>

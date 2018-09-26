@@ -1,0 +1,217 @@
+.filed .sql{padding-bottom:40px}
+.e68{height:3px;background:#e6882b;border:none;margin-bottom:40px}
+.filed .sql .innl{margin-left:80px;width:224px;height:136px}
+.filed .sql .innl img{margin:50px auto;display:block}
+.filed h2{font-size:30px;text-align:center;padding:60px 0}
+.filed .sql .innr{width:810px}
+.filed .sql .innr ul li{float:left;text-align:left;padding-bottom:16px;border-left:1px solid #e6882b}
+.filed .sql .innr ul li:nth-last-child(-n+2){padding-bottom:0}
+.filed .sql .innr ul li a{font-size:16px;color:#e6882b;display:block;width:340px;height:24px;padding-left:60px}
+.filed .sql.blue .innr ul li{border-left:1px solid #10719c}
+.filed .sql.blue .innr ul li a{color:#10719c}
+.filed .sql.blue .innl img{margin:30px auto}
+.c107{height:3px;background:#10719c;border:none;margin-bottom:40px}
+.filed .sql.green .innr ul li{border-left:1px solid #2b7e2c}
+.filed .sql.green .innr ul li a{color:#2b7e2c}
+.filed .sql.green .innl{color:#2b7e2c;font-size:24px;text-align:center;line-height:66px;height:66px;font-weight:700}
+.product{background:#f6f6f6;padding-bottom:100px}
+.product .picScroll-left{text-align:center;width:1200px;margin:0 auto;overflow:hidden;position:relative}
+.product .picScroll-left .hd{position:absolute;top:0;bottom:0;margin:auto;width:100%;display:none}
+.product h2{font-size:30px;height:68px;padding-top:70px;text-align:center}
+.product .picScroll-left:hover .hd{display:block}
+.product .picScroll-left li{width:284px;margin-right:20px}
+.product .picScroll-left li .title{font-size:16px;padding:8px 0}
+.product .picScroll-left li .title a:hover{color:#10719c}
+.product .next,.product .prev{position:absolute;left:0;top:0;display:block;width:32px;height:40px;filter:alpha(opacity=50);opacity:.5;border-radius:3px;-webkit-filter:alpha(opacity=50);background:url(../images/slider-arrow.png) -110px 5px no-repeat}
+.product .next,.product .prev{background-color:#3a394f;padding:10px 0;background-position:-110px 14px;z-index:1;cursor:pointer}
+.product .next{top:0;bottom:0;margin:auto;left:0}
+.product .prev{top:0;bottom:0;margin:auto;right:0;left:auto;background-position:8px 14px}
+.company h2{
+    padding-bottom: 58px;
+}
+/* 企业评价CSS */
+.evaluate{
+    background: url(../images/bglou_18.jpg)no-repeat center center;
+    height: 600px;
+}
+.evaluate h2{
+	text-align: center;
+    font-size: 30px;
+    padding-bottom: 58px;
+}
+		
+.evaluate .slideBox{ width: 1110px;  overflow:hidden; position:relative; margin: 0 auto; }
+.evaluate .slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.evaluate .slideBox .prev,.evaluate .slideBox .next{
+   background: #e1e1e1 url(../images/slider-arrow.png) -110px 5px no-repeat;
+   top: 62px;
+  
+}
+.evaluate .slideBox .prev{
+    left: 400px;
+}
+.evaluate .slideBox .next{
+    right: 400px;
+    background-position: 8px 5px;
+}
+.evaluate .slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.evaluate .slideBox .hd ul li{ width: 1200px; float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer; }
+.evaluate .slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.evaluate .slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.evaluate .slideBox .bd li{ zoom:1; vertical-align:middle; text-align: center;}
+.evaluate .slideBox .bd ul li img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.evaluate .slideBox .bd ul li h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 18px;
+}
+.evaluate .slideBox .bd ul li .blue{
+    color: #178fcb;
+    font-size: 18px;
+    padding-bottom: 56px;
+}
+.evaluate .slideBox .bd ul li .f1{
+    font-size: 16px;
+    color: #333;
+}
+
+/*  */
+.training h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  
+}
+.training .made{
+    width: 500px;
+    background: #eee;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 16px;
+    padding: 40px 0 40px 170px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+}
+
+
+.wrap .no8 {
+    width: 100%;
+    height: 1214px;
+    background: url(../images/bg.png) no-repeat center center;
+  }
+  .wrap .no8 .title {
+    padding-top: 10px;
+  }
+  .wrap .no8 .title1 {
+    margin-top: -27px;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .wrap .no8 .no8Warp {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 66px;
+    padding-top: 13px;
+    width: 1200px;
+    height: 963px;
+    background: url(../images/wire.png) no-repeat center center;
+  }
+  .wrap .no8 .no8Warp .main {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 2px;
+    width: 703px;
+    height: 168px;
+    position: relative;
+  }
+  .wrap .no8 .no8Warp .main div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+  }
+  .wrap .no8 .no8Warp .main div span {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    line-height: 26px;
+    background: #4663f3;
+    vertical-align: top;
+  }
+  .wrap .no8 .no8Warp .main div p {
+    display: inline-block;
+    font-size: 18px;
+    color: #333333;
+    line-height: 26px;
+  }
+  .wrap .no8 .no8Warp .main div .spantexte2 {
+    margin-top: 22px;
+  }
+  .wrap .no8 .no8Warp .main div .text2 {
+    margin-top: 12px;
+  }
+  .wrap .no8 .no8Warp .main:nth-child(odd) {
+    float: right;
+    margin-right: -20px;
+    padding-top: 17px;
+    padding-left: 21px;
+    padding-bottom: 25px;
+  }
+  .wrap .no8 .no8Warp .main:nth-child(odd) span {
+    margin-left: 140px;
+  }
+  .wrap .no8 .no8Warp .main:nth-child(even) {
+    float: left;
+    margin-left: -20px;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+  }
+  .wrap .no8 .no8Warp .main:nth-child(even) span {
+    margin-left: 60px;
+  }
+  .wrap .no8 .no8Warp .main1 {
+    background: url(../images/1.png) no-repeat center center;
+  }
+  .wrap .no8 .no8Warp .main2 {
+    background: url(../images/2.png) no-repeat center center;
+    margin-left: -22px !important;
+    padding-left: 22px !important;
+  }
+  .wrap .no8 .no8Warp .main2 div {
+    margin-top: -4px;
+  }
+  .wrap .no8 .no8Warp .main3 {
+    background: url(../images/3.png) no-repeat center center;
+  }
+  .wrap .no8 .no8Warp .main4 {
+    background: url(../images/4.png) no-repeat center center;
+  }
+  .wrap .no8 .no8Warp .main5 {
+    background: url(../images/5.png) no-repeat center center;
+  }
+  .wrap .no8 .btn1 {
+    margin-top: 40px;
+  }

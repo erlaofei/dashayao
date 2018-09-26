@@ -1,0 +1,50 @@
+.inner ul li.three{
+    width: 115px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #0080af;
+    background: url(../images/xs.png) no-repeat right center;
+    float: right;
+    margin-right: 5px;
+}
+.inner ul li.one{
+    width: 126px;
+    height: 25px;
+    background: #03a54d;
+    float: right;
+}
+.inner ul li.two{
+    width: 80px;
+    height: 25px;
+    background: #f47e7e;
+    float: right;
+    margin-right: 5px;
+}
+.inner ul li.three{
+    width: 115px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #0080af;
+    background: url(../images/xs.png) no-repeat right center;
+    float: right;
+    margin-right: 5px;
+}
+.inner ul li a{
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+}
+.nrjj{
+    font-size: 14px;
+}
+.nr{
+    text-indent: 28px;
+    line-height: 28px;
+}
+.inner ul{
+    height: 25px;
+}

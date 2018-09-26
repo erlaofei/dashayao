@@ -1,0 +1,81 @@
+.bgcf6 {
+    background: #f6f6f6;
+}
+
+.bgcf {
+    background: #fff;
+}
+.w.bgcf h2{
+    font-size: 30px;
+    text-align: center;
+}
+.w.bgcf p:nth-child(2){
+    padding: 20px 0;
+    text-align: center;
+}
+.w.bgcf p:nth-child(2) span{
+    padding: 0 10px;
+}
+.w.bgcf p{
+    line-height: 25px;
+    padding: 0 40px;
+}
+
+
+/*  */
+.bdsharebuttonbox a{
+    float: left;
+    display: inline-block;
+    text-indent: -999px;
+    padding: 0;
+    width: 28px;
+    margin: 0 7px 0 0;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #E6E6E6;
+    border-radius: 3px;
+    background: url(../images/share.png) no-repeat;
+}
+.bdsharebuttonbox em{
+    float: left;
+    display: inline-block;
+    margin: 3px 6px 0 0;
+}
+.bdsharebuttonbox .bds_tsina{
+    background-position: -1px -1px;
+    border-color: #d2423c;
+}
+.bdsharebuttonbox .bds_weixin{
+    background-position: -1px -31px;
+    border-color: #39b41c;
+}
+.bdsharebuttonbox .bds_qzone{
+    background-position: -1px -61px;
+    border-color: #3d9dd1;
+}
+.bdsharebuttonbox .bds_more{
+    background-position: -1px -91px;
+    border-color: #aaa;
+}
+.bdsharebuttonbox .k_favorite{
+    
+}
+.cutline{
+    height: 13px;
+    margin: 2px 8px 0 0;
+    width: 1px;
+    background: #E6E6E6 none repeat scroll 0% 0%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.k_favorite{
+    color: #4FC277;
+    font-size: 14px;
+    border: 1px solid #4FC277;
+    border-radius: 3px;
+    padding: 0px 10px;
+    height: 28px;
+    line-height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,81 @@
+/* 班级 */
+.grade {
+	background: #f6f6f6;
+}
+.grade .inner ul{
+	width: 1200px;
+}
+.grade .inner ul li {
+	width: 286px;
+	height: 420px;
+	background: #fff;
+	text-align: center;
+}
+/*产业介绍*/
+.cyjs h2{
+	font-size: 30px;
+
+	padding: 70px 0;
+	text-align: center;
+}
+.cyjs p{
+  font-size: 16px;
+  line-height: 28px;
+}
+/*专业方向*/
+.major {
+	background: #f6f6f6;
+	width: 100%;
+	padding: 70px 0;
+	text-align: center;
+}
+.major h2{
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+.major p{
+	padding-top: 5px;
+	font-size: 16px;
+}
+.major ul{
+	width: 1250px;
+}
+.major ul li {
+	float: left;
+	padding-right: 20px;
+}
+/*融合产品*/
+.cjproduct{
+
+}
+.cjproduct h2{
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 74px;
+	
+}
+.cjproduct .product p {
+	line-height: 30px;
+}
+.cjproduct .product{
+	border: solid 1px #178fcb;
+	margin-bottom: 30px;
+	
+}
+.cjproduct .product .title{
+	padding-bottom: 26px;
+	padding-top: 40px;
+	color: #178fcb;
+	font-size: 24px;
+}
+.cjproduct .product .right{
+	width: 580px;
+	padding-left: 32px;
+	padding-right: 27px;
+	display: block;
+}
+.cjproduct .product .left{
+	width: 552px;
+	height: 296px;
+}

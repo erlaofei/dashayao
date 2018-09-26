@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-style: normal;
+}
+body{
+    background: #f6f6f6;
+}
+a{
+    color:#666666;
+    text-decoration:none;
+}
+.contents_asp {
+    width: 1200px;
+    margin: 20px auto;
+    height: 415px;
+    overflow: hidden;
+}
+.foucebox {
+    width: 840px;
+    height: 415px;
+    background: #000;
+}
+.foucebox .bd{
+    float: left;
+}
+.showDiv{
+    width: 840px;
+    height: 415px;
+}
+.showDiv img{
+    width: 840px;
+    height: 415px;
+}
+.kuzhan_zixun{
+    width: 340px;
+    position: relative;
+    height: 415px;
+}
+.kuzhan_zixun .bm_h{
+    padding: 15px 15px 15px;
+    border-top: none;
+    border-bottom: 1px solid #a0a0a0;
+    background: transparent;
+    line-height: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.kuzhan_zixun .bm_h h2{
+    position: absolute;
+    height: 16px;
+    padding-left: 15px;
+    line-height: 16px;
+    top: 18px;
+    left: 0;
+    border-left: 4px solid #ff0000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.kuzhan_zixun .kuzhan_zixun_a{
+    padding: 13px 0 0 0;
+    max-height: 455px;
+    overflow: hidden;
+}
+.kuzhan_zixun .kuzhan_zixun_a .kuzhan_SBox{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 318px;
+}
+.kuzhan_zixun .kzm_container{
+    height: 318px;
+    width: auto;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.kuzhan_zixun ul{
+    margin: 0 5px 0 10px;
+}
+.kuzhan_zixun ul li{
+    position: relative;
+    padding: 9px 10px 10px 10px;
+}
+.kuzhan_zixun ul li .zixun_sj{
+    margin-bottom: 5px;
+    display: block;
+    font-size: 12px;
+    font-style: inherit;
+    color: #999;
+    font-family: HELVETICANEUELTPRO-THEX;
+}
+.zixun_title{
+    font-size: 16px;
+    color: #333;
+}
+.y{
+float: right;
+}
+.z{
+    float: left;
+}
+.bm{
+    border: 1px solid #EDEDED;
+    background: #FFF;
+}
+.content-t ul li .xg1{
+    display:inline;
+}
+.foucebox .showDiv h2{
+    position: absolute;
+    left: 20px;
+    bottom: 60px;
+    width: 88%;
+    height: 34px;
+    background: url(http://discuz.kuzhan.cn/mt3/template/kuzhan_yt/public/img/foucebox_h2.png) no-repeat 0 4px;
+    _background: none;
+    padding-left: 40px;
+    _padding-left: 0;
+    font-size: 24px;
+    line-height: 34px;
+    z-index: 9;
+    overflow: hidden;
+}
+.foucebox .showDiv h2 a{
+    color: #f5f5f5;
+    font-weight: normal;
+}
+.foucebox .showDiv p{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    padding-right: 20px;
+    color: #aaa;
+    z-index: 9;
+    height: 44px;
+}
+.foucebox .foucebox_bg{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 840px;
+    height: 107px;
+    background: #000;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    z-index: 8;
+    overflow: hidden;
+}
+/* 主题 */
+.theme{
+
+}
+.theme .title{
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid #a0a0a0;
+}
+.theme .title a{
+    font-size: 16px;
+    color: #222;
+}
+.theme .con ul li {
+padding: 20px;
+}
+.theme .con  .fr {
+    width: 900px;
+}
+.theme .con  .fr h2{
+    font-size: 18px;
+    color: #333;
+    font-weight: 400;
+}
+.theme .con  .fr p:nth-child(2){
+    padding: 20px 0;
+}
+.theme .con  .fr p:nth-child(3){
+    line-height: 24px;
+}
+.theme .con  .fr .see{
+    background: url(../images/see_03.jpg) no-repeat left center;
+    padding-left: 20px;
+}
+.theme .con  .fl img {
+    width: 158px;
+    height: 240px;
+}

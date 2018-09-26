@@ -1,0 +1,112 @@
+/* 原创教材 */
+body{
+    background: #f6f6f6;
+}
+.hotbook h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 95px 0 30px;
+    text-align: center;
+}
+.hotbook .inner{
+    border: solid 1px #e1e1e1;  
+}
+.hotbook ul{
+    width: 1250px;
+}
+.hotbook ul li {
+    padding: 20px 0;
+    width: 240px;
+    float: left;
+}
+.hotbook ul li.hot{
+    background: url(../images/hot_03.jpg) no-repeat left top;
+}
+.hotbook ul li a{
+    display: block;
+}
+.hotbook ul li img{
+    display: block;
+    margin: 0 auto;
+    width: 114px;
+    height: 152px;
+}
+.hotbook ul li .title{
+    width: 100%;
+    font-size: 14px;
+    padding: 20px 0 10px;
+}
+.hotbook ul li p{
+    margin: 0 auto;
+    width: 118px;
+    text-align: center;
+    font-size: 12px;
+}
+.hotbook ul li p b {
+    color: #e60012;
+}
+/* 原创教材列表 */
+.bookList{
+    padding-top: 80px;
+}
+.bookList .inner{
+    border: solid 1px #f6f6f6;
+}
+.bookList .inner ul {
+    padding: 8px 0 20px 24px;
+    border: solid 1px #a8a8a8;
+}
+.bookList .inner ul li {
+    float: left;
+    width: 324px;
+    border: solid 1px #e1e1e1;
+    padding: 20px;
+    margin: 15px 25px 0 0;
+    background: #fff;
+    
+}
+.bookList .inner ul li b{
+    font-weight: 400;
+    color: #e60012;
+}
+.bookList .inner ul li p{
+    padding-top: 12px;
+}
+.bookList .inner ul li .title{
+    font-size: 14px;
+}
+.bookList .inner .top{
+    padding-bottom: 15px;
+}
+.bookList .inner ul li img {
+    width: 114px;
+    height: 154x;
+}
+.bookList .inner ul li img,m{
+    padding-right: 20px;
+}
+.bookList .inner .bottom a {
+    color: #fff;
+    display: block;
+    float: left;
+    width: 160px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+}
+.bookList .inner .bottom .demo{
+    background: #203d4c;
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+}
+.bookList .inner .bottom .consult{
+    background: #178fcb;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
